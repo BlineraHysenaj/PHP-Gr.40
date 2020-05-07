@@ -1,0 +1,43 @@
+.footeri-lart{ 
+    padding: 60px 0 40px 0; 
+    text-align: center;
+    color: #FFF;
+    background: #005185;
+}
+.container-fluid.nditextwidth {
+        width: 100%;
+}
+
+.footeri-posht { 
+    padding: 0 0 60px 0; 
+}
+.mapa {
+    margin-top: 40px;
+}
+.footeri-mediasociale a { 
+    margin: 0 10px; 
+    color: #949494; 
+    border: 0; 
+}
+.footeri-mediasociale a:hover, .footeri-mediasociale a:focus { 
+    color: #E9E9E9; 
+    border: 0; 
+}
+.footeri-mediasociale i { 
+    font-size: 24px; 
+    vertical-align: middle; 
+}
+.footeri-kontakti p { 
+    word-wrap: break-word; 
+}
+.footeri-kontakti i { 
+    padding-right: 10px; 
+    font-size: 18px; 
+    color: #FFF; 
+}
+.footeri-kontakti p a { 
+    color: #FFF;
+}
+.footeri-kontakti p a:hover, .footeri-kontakti p a:focus { 
+    color: #FFF;
+}
