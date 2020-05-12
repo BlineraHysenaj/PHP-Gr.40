@@ -161,3 +161,72 @@ if (isset($_GET['update'])) {
                 <div class="col col-lg-3 requestCol">
             <h4><i class="fa fa-plus" aria-hidden="true"></i>
  New comments from visitors</h4>
+ <?php
+             $result = mysqli_query($link,"SELECT * FROM table_comments");
+                    while($row = mysqli_fetch_array($result)) {
+                        ?>     
+                <div class="requestJoin">
+                    <h5><?php echo $row["id"]; ?></h5>
+                    <h5><span><?php echo $row["Name"]; ?></span><span> : </span><?php echo $row["Comment"]; ?></h5>
+                    
+                   <a href="login.php?del=<?php echo $row['id']; ?>" class="del_btn"><i class="fa fa-times-circle" aria-hidden="true"></i>
+</a>
+                </div>
+                  <?php } ?>
+            </div>
+            
+                <div class="col col-lg-6 requestCol">
+            <h4><i class="fa fa-plus" aria-hidden="true"></i>
+ Admins</h4>
+            
+                <div class="requestJoin">
+                
+                      <div class="table-wrapper">
+                <div class="table-title">
+                <h5><strong style="color:#FF4141">Warning!</strong> These data are sensitive.</h5>
+                </div><br>
+                <table class="table  table-striped table-borderless table-hover">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Username</th>
+                            <th>Password</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <?php
+                        $result = mysqli_query($link,"SELECT * FROM table_admins");
+
+                        while($row = mysqli_fetch_array($result)) {
+                        ?>
+                        <tr id="<?php echo $row["id"]; ?>">
+                            <td><?php echo $row["id"]; ?>
+                            <td><?php echo $row["username"]; ?></td>
+                            <td><?php echo $row["password"]; ?></td>
+                
+                            <td>
+                                <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                    <i class="fas fa-exchange-alt" data-toggle="tooltip" 
+                                       data-id="<?php echo $row["id"]; ?>"
+                                       data-emri="<?php echo $row["username"]; ?>"
+                                       data-mbiemri="<?php echo $row["password"]; ?>"   title="Ndrysho"></i>
+                                </a>
+                                <a href="#deleteEmployeeModal" class="delete" data-id="<?php echo $row["id"]; ?>" data-toggle="modal"><i class="fas fa-user-slash" data-toggle="tooltip" title="Fshije"></i></a>
+                            </td>
+                        </tr>
+                        <?php
+                        }
+                        ?>
+                    </tbody>
+                </table>
+            </div>
+                    
+                
+                </div>
+                
+            </div>
+            
+            
+            </div>
+        </div>  
