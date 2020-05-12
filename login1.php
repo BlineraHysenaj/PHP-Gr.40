@@ -248,3 +248,52 @@ if (isset($_GET['update'])) {
                 <span class="help-block"><?php echo $password_err; ?></span>
             </div>
 			
+
+
+            <!-- Krijimi i formës - Konfirmimi i  Fjalëkalimit (Password) -->	
+            <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
+                <label>Confirm Password:</label>
+                <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
+                <span class="help-block"><?php echo $confirm_password_err; ?></span>
+            </div>
+			
+			<br>
+		
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" name="krijo" id="largohu" value="Create">
+		
+                <input type="reset" class="btn btn-info"  value="Reset">
+            </div>
+			<br> 
+        </form>
+    </div>    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+   
+        
+        
+        
+        <!-- Fillimi i librarive te JS -->  
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        
+        <script src="bt-content/js/bootstrap.min.js"></script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+
+                offset: 120, 
+                delay: 0,
+                once: true,
+
+            });
+        </script>
+    </body>
+</html>
