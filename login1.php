@@ -161,3 +161,90 @@ if (isset($_GET['update'])) {
                 <div class="col col-lg-3 requestCol">
             <h4><i class="fa fa-plus" aria-hidden="true"></i>
  New comments from visitors</h4>
+  <!-- Pjesa e modal per ndryshimin e te dhenave -->
+        <div id="editEmployeeModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form id="update_form">
+                        <div class="modal-header">						
+                            <h3 class="modal-title">Ndrysho</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label>Id</label>
+                                <input type="text" id="id" name="id" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Username</label>
+                                <input type="text" id="username" name="username" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="text" id="password" name="password" class="form-control" required>
+                            </div>
+                        
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary btn-lg" type="submit" name="update" style="background: #556B2F;" >Ndrysho</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    <!-- Pjesa e modal per fshirjen e te dhenave -->
+        <div id="deleteEmployeeModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form>
+
+                        <div class="modal-header">						
+                            <h3 class="modal-title"></h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        </div>
+                        <div class="modal-body">
+                            <input type="hidden" id="id_d" name="id" class="form-control">					
+                            <p>Are u sure u want to delete?</p>
+                            <p class="text-danger"><small>You cannot return this data anymore</small></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" type="submit"  name="fshije" style="background: red;" >Delete</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+          <div class="center">
+      	<center><h2>Create new administrator</h2> </center>  
+		<br>
+       <center> <p>Please type the information right.</p></center>
+		<br>
+			
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+		
+            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                <label>Username :</label>
+                <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+                <span class="help-block"><?php echo $username_err; ?></span>
+            </div> 
+			
+            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                <label>Password :</label>
+                <input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
+                <span class="help-block"><?php echo $password_err; ?></span>
+            </div>
+			
