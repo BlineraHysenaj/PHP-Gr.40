@@ -109,3 +109,55 @@ if (isset($_GET['update'])) {
 
                     </div>
                 </div>
+
+                <nav class="navbar ikonaNav">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </nav>
+            </div> 
+            <div>
+            </div></div>
+
+        <div>
+        <h3 id="welcomeAdmin">Hi <?php echo htmlspecialchars($_SESSION["username"]); ?> welcome to the admin section!</h3>
+        </div>
+        <div class="container-fluid">
+        <div class="row">
+            
+            <div class="col col-lg-12">
+            <a href="shkycu.php"><button class="butonimbylle btn btn-danger"><i class="fa fa-times-circle" aria-hidden="true"></i>
+ Log out</button></a>
+                <a href="#"><button class="butonimbylle btn btn-success"  data-toggle="modal" data-target="#myModal"><i class="fa fa-user-circle" aria-hidden="true"></i>
+ Create new admin</button></a>
+           
+            </div>
+            </div>
+        </div>
+            
+             <div class="container-fluid">
+        <div class="row">
+            
+            <div class="col col-lg-3 requestCol">
+            <h4><i class="fa fa-plus" aria-hidden="true"></i>
+ New requests to join the community</h4>
+            
+                 <?php
+                        $result = mysqli_query($link,"SELECT * FROM table_requests");
+
+                        while($row = mysqli_fetch_array($result)) {
+                        ?>     
+                <div class="requestJoin">
+                    <h5><?php echo $row["Name"]; ?><span> </span><?php echo $row["Lastname"]; ?> </h5>
+                    <h5><?php echo $row["Email"]; ?></h5>
+                    <h5><?php echo $row["Phonenumber"]; ?></h5>
+                
+                </div>
+                <?php } ?>
+                
+            </div>
+            
+                <div class="col col-lg-3 requestCol">
+            <h4><i class="fa fa-plus" aria-hidden="true"></i>
+ New comments from visitors</h4>
