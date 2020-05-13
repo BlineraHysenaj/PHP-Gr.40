@@ -64,4 +64,38 @@ if(isset($_POST['krijo'])){
         }
     }
     
-	
+	// Kontrolloni gabimet e përdoruesit përpara se të vendosen në databazë.
+    if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
+        
+		// Përgadite një deklaratë për insertim.
+        $sql = "INSERT INTO table_admins (username, password) VALUES (?, ?)";
+         
+        if($stmt = mysqli_prepare($link, $sql)){
+
+			// Bind (vendos/lidh) variablat në deklaratën e përgatitur si parametra.
+            mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
+            
+            // Vendosni parametrat.
+            $param_username = $username;
+			
+			// Krijoni një hash fjalëkalimi.
+            $param_password = password_hash($password, PASSWORD_DEFAULT); 
+            
+            // Përpjekje për të ekzekutuar deklaratën e përgatitur.		
+            if(mysqli_stmt_execute($stmt)){
+				
+                // Redirektohuni në faqen e kyqjes.
+                header("location: login.php");
+            } else{
+                echo "Something went bad! Try again later.";
+            }
+        }
+         
+        // Mbyll deklaratën.
+        mysqli_stmt_close($stmt);
+    }
+    
+    // Mbyll lidhjen.
+}
+?>
+ 
