@@ -15,7 +15,7 @@ $username_err = $password_err = "";
 
 // Procesimi i dhënave të formës kur forma është paraqitur (submitted).
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    
+
     // Kontrolloni nëse emri i përdoruesit (username) është i zbrazët.
     if (empty(trim($_POST["username"]))) {
         $username_err = "Please enter your valid username!";
@@ -23,7 +23,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $username = trim($_POST["username"]);
     }
 
-  
+    //funksioni per validimin e email-it
+    function checkemail($username)
+    {
+        return (!preg_match("/^([a-z0-9\+\-]+)(\.[a-z0-9\+\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix", $username)) ? FALSE : TRUE;
+    }
+
     // Kontrolloni nëse fjalëkalimi është i zbrazët.
     if (empty(trim($_POST["password"]))) {
         $password_err = "Please enter your valid password!";
@@ -31,20 +36,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $password = trim($_POST["password"]);
     }
 
-//   //funksioni per validimin e email-it
-//     function checkemail($username)
-//     {
-//         return (!preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix", $username)) ? FALSE : TRUE;
-//     }
-
     // Validoni kredencialet.
     if (empty($username_err) && empty($password_err)) {
-       
-       // if (checkemail($username)) {
-          
+        if (checkemail($username)) {
             // Përgatitni një deklaratë (select) të zgjedhur.
             $sql = "SELECT id, username, password FROM table_admins WHERE username = ?";
-           
+
             // Përgatitni një deklaratë SQL për ekzekutim.
             if ($stmt = mysqli_prepare($link, $sql)) {
 
@@ -53,8 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 // Vendosni parametrat.
                 $param_username = $username;
-               
-               
+
                 // Përpjekje për të ekzekutuar deklaratën e përgatitur.
                 // Ekzekuton një Query të përgatitur.
                 if (mysqli_stmt_execute($stmt)) {
@@ -97,8 +93,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     echo "Please try again later!";
                 }
             }
-            // Mbyll deklaraten (statement).
-            mysqli_stmt_close($stmt);
+             // Mbyll deklaraten (statement).
+             mysqli_stmt_close($stmt);
         }
         
         else{
@@ -143,7 +139,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         #bg-nav {
             width: 100%;
             height: 100%;
-            background-image: url("bt-content/Images/100.jpg");
+            background-image: url("bt-content/Images/turtle1.jpg");
             background-size: cover;
             color: #FFF;
         }
@@ -201,4 +197,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
 
 </html>
-             
