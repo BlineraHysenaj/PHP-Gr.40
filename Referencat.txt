@@ -1,0 +1,57 @@
+REFERENCAT
+
+https://use.fontawesome.com/releases/v5.7.0/css/all.css
+
+<!--Librari per animacione -->
+https://unpkg.com/aos@next/dist/aos.css
+
+https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js
+
+<!-- Fillimi i librarive te JS --> 
+https://code.jquery.com/jquery-3.2.1.slim.min.js
+https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js
+
+
+https://stackpath.bootstrapcdn.com/bootstrap/4.2.0/css/bootstrap.min.css
+
+js/app.js
+js/particles.js
+
+ <!--Paraqitja e iframe te mapit -->
+https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1471.753372737915!2d21.044426257954523!3d42.45950997992854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13537f00b9312eab%3A0x64cc0dfa29a9062e!2sDonje%20Godance!5e0!3m2!1sen!2s!4v1588196537271!5m2!1sen!2s
+
+
+<!-- Fillimi i librarive te JS --> 
+https://code.jquery.com/jquery-3.2.1.slim.min.js 
+https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js
+https://unpkg.com/aos@next/dist/aos.js
+
+https://use.fontawesome.com/releases/v5.7.0/css/all.css
+
+https://stackpath.bootstrapcdn.com/bootstrap/4.2.0/css/bootstrap.min.css
+
+<!-- Baza-->
+http://kompjuterika.tk/course/view.php?id=3
+<!-- Multidimensional Arrays-->
+https://www.w3schools.com/php/php_arrays_multidimensional.asp
+<!-- Funksioni implode, explode-->
+https://www.w3schools.com/php/func_string_explode.asp
+<!-- Krijimi i COOKIES-->
+https://www.w3schools.com/php/php_cookies.asp
+https://www.geeksforgeeks.org/php-cookies/
+<!-- Dergimi i emailit -->
+https://www.w3schools.com/php/func_mail_mail.asp
+https://html.form.guide/email-form/php-form-to-email.html
+<!-- Konektimi me Databaze -->
+https://www.w3schools.com/php/php_mysql_connect.asp
+https://www.w3schools.com/php/func_mysqli_connect.asp
+https://www.php.net/manual/en/function.mysql-connect.php
+<!-- Fshirja e Cookies-->
+https://www.geeksforgeeks.org/remove-a-cookie-using-php/
+<!--web Weather -->
+https://rapidapi.com/
+<!-- Preg Replace -->
+https://www.php.net/manual/en/function.preg-replace.php 
+<!-- Preg Split -->
+ https://www.php.net/manual/en/function.preg-split.php
+ 
