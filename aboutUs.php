@@ -1,15 +1,17 @@
 <?php
 require("Header.php")
 ?>
+
 <?php
 ob_start();
 $emri = "personi";
 $vlera = "101";
 setcookie($emri, $vlera, time() + 60 * 60 * 24);
 if (isset($_POST['personi'])) {
-    $emri = "Blinera";
+    $emri = "FIEK";
     $vlera = "101";
 }
+
 if (isset($_COOKIE)) {
     echo "Cookie i krijuar:" . $_COOKIE["personi"];
     echo "<br>";
@@ -33,7 +35,6 @@ ob_end_flush();
 require("deletecookies.php");
 ?>
 
-
 <DIV id="aboutUs">
     <div id="domain">
         <?php
@@ -51,7 +52,6 @@ require("deletecookies.php");
         ?>
         <?php
 
-
         // get host name from URL
         preg_match(
             '@^(?:http://)?([^/]+)@i',
@@ -68,6 +68,7 @@ require("deletecookies.php");
 
     <hr id="hr44" data-aos="slide-left">
     <hr id="hr3" data-aos="slide-left">
+
     <?php
     $string = 'The Education Department is in -> USA.';
     $patterns = array();
@@ -88,49 +89,13 @@ require("deletecookies.php");
         }
         ?>
     </div>
-
-
 </DIV>
-<style>
-    #preg_split {
-        text-align: right;
-        font-size: 15px;
-        font-family: sans-serif monospace;
-        color: blueviolet;
-    }
-
-    #domain {
-        margin-top: 0px;
-        width: 100%;
-        text-align: center;
-        border: 1px solid black;
-        border-radius: 10px 10px 10px 10px;
-        font-size: 15px;
-        font-family: sans-serif monospace;
-    }
-
-    #aboutUs {
-        background: url('C:/xampp/htdocs/New folder/Detyra2020/bt-content/Images/3.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 100% 100%;
-
-    }
-
-    .card-quote {
-        color: cadetblue;
-        text-align: center;
-        margin-top: 110px;
-    }
-</style> <br>
+<br>
 <hr id="hr3">
 <hr id="hr4">
 <?php
 require("WebWeather.php");
 ?>
-
-
-
 
 <!-- Rangimet -->
 <div class="container-fluid">
@@ -141,49 +106,34 @@ require("WebWeather.php");
             <div class="card-quote">
                 <p>“One in five children, adolescents and youth worldwide are out of school - a figure that has barely changed over the past five years (UNESCO).
                     Youth literacy rates have improved from 83% to 91% over two decades (UNICEF).
-
                 </p>
                 <div class="card-body">
-
-
                 </div>
             </div>
         </div>
-
         <div class="col-12 col-lg-5 col-md-4">
             <img src="./bt-content/Images/20.jpg" width="100%" height="300">
-
-
         </div>
-
-
         <div class="col-12 col-lg-2 col-md-4 ">
             <?php
             require('Profesori.php');
             ?>
-
-
         </div>
-
     </div>
 </div>
-<!-- Mbarimi i rangimit -->
 
+<!-- Mbarimi i rangimit -->
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 col-lg-12">
-
-            <h3 id="likeus1">STATISTI</h3>
-
+            <h3 id="likeus1">STATISTIKAT</h3>
         </div>
 
         <div class="col col-lg-3 col-12">
             <div class="square1">
-
                 <p><i style="font-size: 50px" class="fas fa-graduation-cap "></i></p>
                 <h3 id="pjesmarres"></h3>
                 <p>Students</p>
-
             </div>
         </div>
 
@@ -197,22 +147,20 @@ require("WebWeather.php");
 
         <div class="col col-lg-3 col-12">
             <div class="square1">
-
                 <p><i style="font-size: 50px" class="fas fa-university "></i></p>
                 <h3 id="komunitet"></h3>
                 <p>Universities</p>
-
             </div>
         </div>
 
         <div class="col col-lg-3 col-12">
             <div class="square1">
-
                 <p><i style="font-size: 50px" class="fas fa-laptop "></i></p>
                 <h3 id="partner"></h3>
                 <p>Digital Education</p>
             </div>
         </div>
+
     </div>
 </div>
 <script type="text/javascript">
@@ -221,13 +169,10 @@ require("WebWeather.php");
     var komunitet = document.getElementById('komunitet');
     var partner = document.getElementById('partner');
 
-
-
     var i = 0,
         persona = 11230987;
 
     function pjesmarresit() {
-
         pjesmarres.innerHTML = i++ + '+';
         if (i <= persona) {
             setTimeout(pjesmarresit, 10);
@@ -267,31 +212,21 @@ require("WebWeather.php");
         }
     };
 
-
     partneripjesmarres();
     komunitetetpjesmarres();
     folesitpjesmarres();
     pjesmarresit();
 </script>
 
-</div>
-</div>
-
-
-</div>
-
-
-
-
 <?php
 require("email.php");
 ?>
-<br><br>
+<br>
+<br>
 <a href="./index.php" style="text-decoration: none;color: rgb(192, 93, 93);">
     </n><button class="button" color="red"></n>RETURN HOME</button>
     <style>
         button {
-
             /* remove default behavior */
             appearance: none;
             -webkit-appearance: none;
@@ -303,7 +238,6 @@ require("email.php");
             color: #fff;
             font-weight: 600;
             border-radius: 5px;
-
         }
     </style>
     <br><br>
@@ -314,6 +248,7 @@ require("email.php");
             <span>Dismiss</span>
         </a>
     </div>
+
     <script type="text/javascript">
         function acceptCookieFooter() {
             var el = document.getElementById('cookie-accept-footer');
@@ -340,3 +275,36 @@ require("email.php");
     <?php
     require("Footer.php");
     ?>
+
+    <style>
+        #preg_split {
+            text-align: right;
+            font-size: 15px;
+            font-family: sans-serif monospace;
+            color: blueviolet;
+        }
+
+        #domain {
+            margin-top: 0px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 10px 10px 10px 10px;
+            font-size: 15px;
+            font-family: sans-serif monospace;
+        }
+
+        #aboutUs {
+            background: url('C:/xampp/htdocs/New folder/Detyra2020/bt-content/Images/3.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+
+        }
+
+        .card-quote {
+            color: cadetblue;
+            text-align: center;
+            margin-top: 110px;
+        }
+    </style>
