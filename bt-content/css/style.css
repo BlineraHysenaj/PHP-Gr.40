@@ -1,0 +1,633 @@
+body {
+    margin: auto;
+    padding: 0;
+}
+
+a:hover,
+a:active,
+a:focus,
+input:hover,
+input:active,
+input:focus,
+button:hover,
+button:active,
+button:focus {
+    outline: 0;
+}
+.nav-item a {
+
+    align-content: center;
+    text-align: center;
+    width: 30%;
+    color: #000;
+    margin: auto;
+}
+
+
+.nav-item a:hover {
+    color: #000;
+    border-bottom: 1px solid black;
+    border-width: 3px;
+    border-radius: 4px 4px 4px 4px;
+
+}
+
+.formaBG {
+    background: #1F1F1F;
+    width: 30%;
+    padding: 40px 40px 90px 40px;
+    text-align: center;
+    border-radius: 100px 100px 100px 100px;
+    margin: 0 auto;
+    margin-top: -500px;
+    margin-left: 70%;
+    z-index: 1;
+}
+.curved {
+
+    background-color: #1F1F1F;
+}
+.curved svg {
+    display: block;
+}
+
+#welcomeAdmin {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    background-color: #1F1F1F; 
+    color: #fff;
+    padding: 15px 0 15px 0;
+
+}
+
+.bg-nav{
+    background:url('../Images/3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: coral;
+    height: 560px;
+
+}
+
+.square1 {
+
+    width: 100%;
+    margin: 20px 0 20px 0 ;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+
+}
+.square1 img {
+    border-radius: 10px 10px 10px 10px;
+    
+}
+.square1 img:hover {
+    border-radius: 0px 20px 0px 20px;
+
+}
+#comment {
+    margin-top: 20px;
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
+}
+.butoni2.btn::before {
+    content: 'We will recieve your comment. And we will try to get better and better.';
+    color: #fff;
+    display: block;
+    position: absolute;
+    letter-spacing: 2px;
+    bottom: 40%;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+    border-radius: 20px;
+    white-space: nowrap;
+    background: #1F1F1F;
+    padding: 20px 0 20px 0;
+    transform: scale(0);
+    transition: ease-in 150ms;
+}
+.butoni2.btn:hover::before {
+
+    transform: scale(1);
+}
+.square1:hover  {
+
+    filter: grayscale(0);
+}
+.blockquote {
+    margin-left: 120px;
+}
+.textTurtles {
+    margin-top: 100px;
+    text-align: justify;
+    width: 30%;
+}
+
+#pikat {
+    display: none;
+}
+#meshume {
+    display: none;
+}
+.container-fluid.foteri {
+    background-color: #1F1F1F;
+    width: 100%;
+    color: #FFF;
+    margin-top: 120px;
+    text-align: center;
+    height: 300px;
+    padding-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 10px;
+}
+.butoni.btn {
+    margin: auto;
+    background-color: #1F1F1F;
+    border: 0;
+    width: 30%;
+    border-radius: 10px 10px 10px 10px;
+
+}
+.butoni.btn:hover {
+    background-color: #474747;
+}
+.butoni2.btn {
+    margin: auto;
+    background-color: #1F1F1F;
+    border: 0;
+    border-radius: 10px 10px 10px 10px;
+
+}
+.butoni2.btn:hover {
+    background-color: #474747;
+}
+#likeus1 {
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+
+
+}
+
+#hr1 {
+    width: 80%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: #000;
+    opacity:0.5;
+}
+#hr2 {
+    width: 60%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: #000;
+    opacity:0.5;
+}
+#hr3 {
+    width: 40%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: #000;
+    opacity:0.5;
+}
+#hr4 {
+    width: 20%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: #000;
+    opacity:0.5;
+
+}
+#hr44 {
+    width: 20%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: #000;
+    opacity:0.5;
+
+
+}
+.card.quote {
+    margin-top: 100px;
+    border: 0;
+}
+#education {
+    background-color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 10px;
+}
+#hpNature {
+    text-align: center;
+    color: black;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+}
+#hpNature1 {
+    text-align: center;
+    color: black;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.ikonaNav span i {
+    color: #FFFF;
+    font-size: 40px;
+    border: 0;
+    margin: auto;
+
+}
+#formMsg {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 0 10px 0;
+
+}
+.ditet {
+    color: #ffff;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 20px;
+
+}
+.divKomentet{
+    width: 100%;
+    margin: -70px 0 -90px 0;
+    padding: 5px 5px 5px 5px;
+    background-color: #eaeae1;
+    overflow-y: scroll;
+    max-height: 400px;
+    height: 400px;
+    border-radius: 10px 10px 10px 10px;
+
+}
+.divKomentet p {
+    text-align: center;
+    color: #ABABAB;
+    font-weight: 700;
+
+}
+.formaKomentet {
+    margin-top: 100px;
+}
+
+#userKomenti {
+    font-size: 10px;
+    background-color: #f2f2f2;
+    font-family: sans-serif monospace;
+    margin:5px 5px 5px 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px 10px 10px 10px;
+
+
+}
+#userEmri {
+    padding-left: 10px;
+}
+#userSubmit {
+    margin-top: 5px;
+    border-radius: 10px 10px 10px 10px;
+
+}
+#chatKomenti {
+    margin: auto;
+    border: 5px solid #E4E4E4; 
+    border-radius: 10px 10px 10px 10px;
+}
+.fa.ikona {
+    color: #ffff;
+    font-size: 20px;
+}
+.koha-countdown {
+    text-align: center;
+    margin-top: 10px;
+}    
+#msgEvent {
+    color: #ffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 5px;
+    background: #1F1F1F;
+    padding: 5px 0 5px 0;
+    width: 50%;
+    margin: auto;
+}
+.butonimbylle {
+    float: right;
+}
+.requestCol h4 {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #E7E7E7;
+    border-radius: 6px 6px 6px 6px;
+    padding: 5px 0 5px 0;
+}
+.requestCol {
+    margin-top: 10px;
+    background-color: #CDCDCD;
+    border-radius: 6px 6px 6px 6px;
+    height: 600px;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+.paragrafi1 {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;    
+}   
+.paragrafi {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+} 
+.requestJoin {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #E7E7E7;
+    border-radius: 6px 6px 6px 6px;
+    padding: 5px 0 5px 0;
+}
+.requestJoin h5 {
+    font-size: 14px;
+}
+/* CSS PER EVENTIN */
+.eventi {
+    position: relative;
+}
+.eventi-countdown .row {
+    margin-top: 30px;
+}
+.eventi+.eventi {
+    margin-top: 60px;
+}
+.eventi:after {
+    content: "";
+    position: absolute;
+    left: 60px;
+    top: 0px;
+    bottom: 0px;
+    width: 4px;
+    background-color: #005185;
+}
+.eventi:last-child:after {
+    height: 60px;
+}
+.eventi+.eventi:before {
+    content: "";
+    position: absolute;
+    left: 60px;
+    height: 60px;
+    top: -60px;
+    width: 4px;
+    background-color: #005185;
+}
+.eventi .dita-eventit {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #C6426E;
+    z-index: 10;
+}
+.eventi .ora-eventit {
+    position: absolute;
+    left: 62px;
+    top: 60px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #005185;
+    z-index: 10;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.eventi .dita-eventit>div {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.eventi .dita-eventit .dita {
+    display: block;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+}
+.eventi .dita-eventit .viti {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.eventi .permbajtja-eventit {
+    padding-left: 160px;
+    min-height: 120px;
+}
+.eventi .koha-even12pxtit {
+    font-size: 14px;
+}
+.eventi .koha-eventit i {
+    color: #dd0a37;
+}
+.eventi .permbajtja-eventit a {
+    color: #005185;
+}
+.btn.butoni3 {
+    margin-top: 60px;
+    text-align: center;
+    background-color:#C6426E;
+    color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: 0.5s;
+    border: 0;
+    width: 50%;
+}
+/*Mbarimi*/
+.buton{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+/* CSS per footerin */
+.footeri-lart{ 
+    padding: 60px 0 40px 0; 
+    text-align: center;
+    color: #FFF;
+    background: #005185;
+}
+.footeri-lart h3{ 
+    padding-bottom: 30px; 
+}
+.footeri-kontakti p { 
+    word-wrap: break-word; 
+}
+.footeri-kontakti i { 
+    padding-right: 10px; 
+    font-size: 18px; 
+    color: #FFF; 
+}
+.footeri-kontakti p a { 
+    color: #FFF;
+}
+.footeri-kontakti p a:hover, .footeri-kontakti p a:focus { 
+    color: #FFF;
+}
+.footeri-linku a { 
+    color: #FFF; 
+    border: 0; 
+}
+.footeri-linku a:hover, .footeri-linku a:focus { 
+    color: #E9E9E9; 
+    margin-left: 3px; 
+}
+.footeri-posht { 
+    padding: 0 0 60px 0; 
+}
+.footeri-mediasociale a { 
+    margin: 0 10px; 
+    color: #949494; 
+    border: 0; 
+}
+.footeri-mediasociale a:hover, .footeri-mediasociale a:focus { 
+    color: #E9E9E9; 
+    border: 0; 
+}
+.footeri-mediasociale i { 
+    font-size: 24px; 
+    vertical-align: middle; 
+}
+/*Cookies*/
+.CookieAcceptance {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    background: hsla(220,21%,12%,.95);
+    border-top: 1px solid rgba(255,255,255,.1);
+    color: #fff;
+    font-size: 13px;
+    z-index: 5000;
+}
+
+/* THIS IS FOR A SMARTPHONE RESOLUTION */
+@media only screen and (max-width: 600px) {
+    .formaBG {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-top: -540px;
+        position: sticky;
+        border-radius: 10px 10px 10px 10px;
+    }
+    .curved {
+        margin-top: 320px;
+    }
+    .ditet #dita {
+        font-size: 23px;
+        margin-top: 30px;
+    }
+    .koha-countdown {
+        text-align: center;
+    }    
+    #paragrafi-ditet {
+        font-size: 14px;   
+    }
+    #paragrafi-ora {
+        font-size: 14px;   
+    }
+    #paragrafi-minuta {
+        font-size: 14px;   
+    }
+    #paragrafi-sekonda {
+        font-size: 14px;   
+    }     
+    .eventi-countdown {
+        padding: 0;
+    }
+    .weektext {
+        margin-top: 0px;
+    }
+    .ditet #ora {
+        font-size: 23px;       
+    } 
+    .ditet #minuta {
+        font-size: 23px;       
+    }
+    .ditet #sekonda {
+        font-size: 23px;       
+    }
+    #msgEvent {
+        white-space:pre-wrap;
+        margin: auto;
+        width: 100%;
+    }
+    #hpNature1 {
+        margin-top: 25px;
+    }
+    .card.quote {
+        text-align: center;
+
+    }
+    #hr44 {
+        margin-top: 100px;
+    }
+    .butoni.btn {
+        width: 100%;
+    }
+    .container-fluid.foteri {
+        height: 700px;
+    }
+    #comment {
+        width: 100%;
+    }
+    .divKomentet {
+        width: 80%;
+        margin: 50px auto;
+    }
+    .formaKomentet {
+        margin-top: -30px;
+    }
+    .blockquote {
+        margin: auto;
+    }
+    #welcomeAdmin {
+        font-size: 12px;
+        padding: 25px 0 25px 0;
+        letter-spacing: 2px;
+    }
+}
