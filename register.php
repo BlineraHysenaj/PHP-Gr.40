@@ -90,8 +90,8 @@ include 'regjistrimi.php';
 
 
             </div>
-            <center><a href="./index.php"><button class="btn btn-primary">Return Home</button></a></center>
         </form>
+         <center><a href="./index.php"><button class="btn btn-primary">Return Home</button></a></center>
     </div>
 </body>
 

@@ -9,7 +9,6 @@ if(isset($_GET['userSubmit'])) {
     
     $emri = $_GET['chatEmri'];
     $komenti = $_GET['chatKomenti'];
-    
     $sql = "INSERT INTO table_comments(Name,Comment) VALUES ('$emri','$komenti')";
     
     if($link->query($sql)===true) {
@@ -33,8 +32,6 @@ if(isset($_GET['request'])) {
     else {
         echo "Error:" . $sql . "<br>" . $link->error;
     }
-    
-    
 }
 ?>
 
@@ -223,7 +220,7 @@ setcookie("username", "Blinera", time()+60*60*24*7);?>
                         <div class="square1">
 
                             <h4 id="education">Top Education States</h4>
-                            <img src='./bt-content/Images/1.jpg' alt="Turtle is born" width="100%" height="200">
+                            <img src='./bt-content/Images/1.jpg' alt="education" width="100%" height="200">
                             
                         </div>
                     </div>
@@ -232,7 +229,7 @@ setcookie("username", "Blinera", time()+60*60*24*7);?>
                         <div class="square1">
 
                             <h4 id="education">Online Educations Degrees.</h4>
-                            <img src='./bt-content/Images/2.jpg' alt="Turtle is living" width="100%" height="200">
+                            <img src='./bt-content/Images/2.jpg' alt="education" width="100%" height="200">
                            
                         </div>
                     </div>
@@ -241,7 +238,7 @@ setcookie("username", "Blinera", time()+60*60*24*7);?>
                         <div class="square1">
 
                             <h4 id="education">Challenge of education</h4>
-                            <img src='./bt-content/Images/3.jpg' alt="Turtle is getting old" width="100%" height="200">
+                            <img src='./bt-content/Images/3.jpg' alt="education" width="100%" height="200">
                          
                         </div>
                     </div>
@@ -250,7 +247,7 @@ setcookie("username", "Blinera", time()+60*60*24*7);?>
                         <div class="square1">
                    
                             <h4 id="education">Benefits of educations</h4>
-                            <img src='./bt-content/Images/4.jpg' alt="Turtle is born" width="100%" height="200">
+                            <img src='./bt-content/Images/4.jpg' alt="education" width="100%" height="200">
                         </div>
                     </div> 
                 </div>

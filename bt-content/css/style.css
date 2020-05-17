@@ -75,8 +75,8 @@ button:focus {
 
     width: 100%;
     margin: 20px 0 20px 0 ;
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
+    /*-webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);*/
 
 }
 .square1 img {
@@ -116,8 +116,9 @@ button:focus {
     transform: scale(1);
 }
 .square1:hover  {
-
-    filter: grayscale(0);
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+  
 }
 .blockquote {
     margin-left: 120px;
