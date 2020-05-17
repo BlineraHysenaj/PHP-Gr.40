@@ -94,7 +94,6 @@ if(isset($_POST['krijo'])){
         // Mbyll deklaratën.
         mysqli_stmt_close($stmt);
     }
-    
     // Mbyll lidhjen.
 }
 ?>

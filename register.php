@@ -1,18 +1,14 @@
 <?php
-
 include 'regjistrimi.php';
-
-
 ?>
 
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title>Regjistrimi</title>
 
-    <!-- Përdorimi i bootstrap -->
+    <!-- PÃĢrdorimi i bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.0/css/bootstrap.min.css">
 
     <!-- Definimi i stilizimit CSS -->
@@ -94,5 +90,4 @@ include 'regjistrimi.php';
          <center><a href="./index.php"><button class="btn btn-primary">Return Home</button></a></center>
     </div>
 </body>
-
 </html>
