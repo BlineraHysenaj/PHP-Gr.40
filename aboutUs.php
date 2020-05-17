@@ -11,8 +11,8 @@ require("Header.php")
   
   date_default_timezone_set('america/new_york');
   
-  $aMember = new Perdoruesi( "Blerona", "Skenderaj", 'http://w3programmers.com/' );
-  echo $aMember->getUsername() . " jeton ne " . $aMember->getLocation() ."<br>";
+  $aMember = new Perdoruesi( "FIEK", "Bregu i Diellit", 'http://w3programmers.com/' );
+  echo $aMember->getUsername() . " gjendet ne " . $aMember->getLocation() ."<br>";
   $aMember->save();
   $aTopic = new Koha( "Koha: ", $aMember );
   $aTopic->showHeader();
