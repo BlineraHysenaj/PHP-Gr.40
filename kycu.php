@@ -115,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
 
-    <title>Admin - Week of Women &copy; </title>
+    <title>Kycu </title>
     <link rel="icon" type="image/png" href="../2020/Photos/logo.png">
     <link rel="apple-touch-icon" type="image/png" href="../2020/Photos/logo.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.0/css/bootstrap.min.css">
@@ -139,7 +139,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         #bg-nav {
             width: 100%;
             height: 100%;
-            background-image: url("bt-content/Images/turtle1.jpg");
+            background-image: url("bt-content/Images/9.jpg");
             background-size: cover;
             color: #FFF;
         }
