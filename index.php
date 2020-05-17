@@ -102,30 +102,30 @@
                     </div>
                     <div class="col col-lg-3 col-12">
                         <div class="square1">
-                            <h4 id="turtlesQuotes">Top Education States</h4>
-                            <img src='./bt-content/Images/1.jpg' alt="Turtle is born" width="100%" height="200">
+                            <h4 id="education">Top Education States</h4>
+                            <img src='./bt-content/Images/1.jpg' alt="Education" width="100%" height="200">
                             <a href= "https://worldpopulationreview.com/states/best-states-for-education/">
                         </div>
                     </div>
                     <div class="col col-lg-3 col-12">
                         <div class="square1">
-                            <h4 id="turtlesQuotes">Online Educations Degrees.</h4>
-                            <img src='./bt-content/Images/2.jpg' alt="Turtle is living" width="100%" height="200">
+                            <h4 id="education">Online Educations Degrees.</h4>
+                            <img src='./bt-content/Images/2.jpg' alt="Education" width="100%" height="200">
                             <a href="https://www.guidetoonlineschools.com/degrees/education">
                         </div>
                     </div>
                     <div class="col col-lg-3 col-12">
                         <div class="square1">
-                            <h4 id="turtlesQuotes">Challenge of education</h4>
-                            <img src='./bt-content/Images/3.jpg' alt="Turtle is getting old" width="100%" height="200">
+                            <h4 id="education">Challenge of education</h4>
+                            <img src='./bt-content/Images/3.jpg' alt="Education" width="100%" height="200">
                             <a href="http://neatoday.org/2018/08/03/10-challenges-facing-public-education-today/">
                         </div>
                     </div>
                     <div class="col col-lg-3 col-12">
                         <div class="square1">
                         <a href="https://www.borgenmagazine.com/top-10-benefits-of-education/">
-                            <h4 id="turtlesQuotes">Benefits of educations</h4>
-                            <img src='./bt-content/Images/4.jpg' alt="Turtle is born" width="100%" height="200">
+                            <h4 id="education">Benefits of educations</h4>
+                            <img src='./bt-content/Images/4.jpg' alt="Education" width="100%" height="200">
                         </div>
                     </div> 
                 </div>
