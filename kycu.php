@@ -1,18 +1,15 @@
 <?php
-
 session_start();
 
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     header("location: login.php");
     exit;
 }
-require_once "konfigurimi.php";
 
+require_once "konfigurimi.php";
 // Definoni variablat dhe inicializoni me vlera të zbrazeta.
 $username = $password = "";
 $username_err = $password_err = "";
-
-
 // Procesimi i dhënave të formës kur forma është paraqitur (submitted).
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -93,17 +90,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     echo "Please try again later!";
                 }
             }
-             // Mbyll deklaraten (statement).
-             mysqli_stmt_close($stmt);
-        }
-        
-        else{
-        // Shfaq një mesazh gabimi nëse email-a nuk është valide.
+            // Mbyll deklaraten (statement).
+            mysqli_stmt_close($stmt);
+        } else {
+            // Shfaq një mesazh gabimi nëse email-a nuk është valide.
             $username_err = "Ju lutem shkruani email-in tuaj valid!";
         }
-        
     }
-   
+
     // Mbyll koneksionin (lidhjen).
     mysqli_close($link);
 }
@@ -114,7 +108,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <head>
     <meta charset="UTF-8">
-
     <title>Kycu </title>
     <link rel="icon" type="image/png" href="../2020/Photos/logo.png">
     <link rel="apple-touch-icon" type="image/png" href="../2020/Photos/logo.png" />
@@ -165,8 +158,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <center>
             <p>Only specific people are allowed to enter this page.</p>
         </center>
-
-
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
@@ -190,10 +181,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <center><a href="./index.php"><button class="btn btn-primary">Return Home</button></a></center>
 
-
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
 
 </body>
-
 </html>
