@@ -10,7 +10,7 @@ class Koha implements InterfaceClass {
   public function __construct( $subject, $author ) {
     $this->subject = $subject;
     $this->author = $author;
-    $this->createdTime = time();
+    $this->createdTime = time();    
   }
 
   public function showHeader() {    

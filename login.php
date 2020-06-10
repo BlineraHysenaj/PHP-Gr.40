@@ -46,6 +46,7 @@ if (isset($_GET['update'])) {
 <!DOCTYPE html>
 <html>
 
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -85,7 +86,7 @@ if (isset($_GET['update'])) {
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-users" aria-hidden="true"></i> About Us</a>
+                            <a class="nav-link" href="./aboutUs.php"><i class="fa fa-users" aria-hidden="true"></i> About Us</a>
                         </li>
 
                         <li class="nav-item">
@@ -125,7 +126,7 @@ if (isset($_GET['update'])) {
                         Create new admin</button>
                 </a>
             </div>
-
+            
         </div>
     </div>
 

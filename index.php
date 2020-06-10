@@ -1,6 +1,7 @@
 <?php
 
 require_once 'konfigurimi.php';
+
 # Variablat ne PHP i shenojme me $
 #$_GET--Array of query string data passed to the server via the URL
 #$_Get eshte variabel superglobale qe perdoret per me i grumbullu/collect te dhenat qe paraqiten ne nje Html form, gjithashtu munet me grumbullu te dhena qe jane dergu ne URL
@@ -35,9 +36,8 @@ if (isset($_GET['request'])) {
 
 <!DOCTYPE html>
 <?php
-setcookie("username", "FIEK", time() + 60 * 60 * 24 * 7);
+//setcookie("username", "FIEK", time() + 60 * 60 * 24 * 7);
 ?>
-
 <html>
 
 <head>
@@ -155,12 +155,12 @@ setcookie("username", "FIEK", time() + 60 * 60 * 24 * 7);
                 document.getElementById("ora").innerHTML = hours + " ";
                 document.getElementById("minuta").innerHTML = minutes + " ";
                 document.getElementById("sekonda").innerHTML = seconds + " ";
-                // Deklarimi dhe incializimi i variablave te id
 
-                var paragrafi1 = document.getElementById("paragrafi-ditet");
-                var paragrafi2 = document.getElementById("paragrafi-ora");
-                var paragrafi3 = document.getElementById("paragrafi-minuta");
-                var paragrafi4 = document.getElementById("paragrafi-sekonda");
+                // Deklarimi dhe incializimi i variablave te id
+                // var paragrafi1 = document.getElementById("paragrafi-ditet");
+                // var paragrafi2 = document.getElementById("paragrafi-ora");
+                // var paragrafi3 = document.getElementById("paragrafi-minuta");
+                // var paragrafi4 = document.getElementById("paragrafi-sekonda");
 
                 // Nese eventi mbaron ndrysho elementin ne tekst
                 if (distanca < 0) {
@@ -169,7 +169,6 @@ setcookie("username", "FIEK", time() + 60 * 60 * 24 * 7);
                     document.getElementById("ora").innerHTML = "0";
                     document.getElementById("minuta").innerHTML = "0";
                     document.getElementById("sekonda").innerHTML = "0";
-
                 }
             }, 100);
         </script>
@@ -186,7 +185,7 @@ setcookie("username", "FIEK", time() + 60 * 60 * 24 * 7);
     <!--Krijimi i formes per userat e jashtum te kerkojn  te hyn ne grup -->
     <div class="formaBG">
         <h5 id="formMsg">Join Us</h5>
-        <form action="" method="get">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="get">
 
             <i class="fa ikona fa-sticky-note" aria-hidden="true"></i>
             <input type="text" id="emri" name="emri" placeholder="Name" class="btn" required><br><br>
@@ -202,7 +201,7 @@ setcookie("username", "FIEK", time() + 60 * 60 * 24 * 7);
 
     <div class="cardsinFront">
         <!-- Krjimi i disa fotove -->
-        <hr id="hr44" data-aos="slide-left">
+        <hr id="hr4" data-aos="slide-left">
         <hr id="hr3" data-aos="slide-left">
         <hr id="hr2" data-aos="slide-left">
         <hr id="hr1" data-aos="slide-left">
@@ -279,6 +278,7 @@ setcookie("username", "FIEK", time() + 60 * 60 * 24 * 7);
                 <div class="divKomentet">
                     <p>Leave a comment about us!</p>
                     <?php
+
                     $result = mysqli_query($link, "SELECT * FROM table_comments");
 
                     while ($row = mysqli_fetch_array($result)) {
@@ -376,8 +376,8 @@ setcookie("username", "FIEK", time() + 60 * 60 * 24 * 7);
                 <span class="sr-only">Next</span>
             </a>
 
-        </div>    
-    </div> 
+        </div>
+    </div>
     <br> <br>
 
     <!-- Programi Eventit -->
@@ -388,7 +388,7 @@ setcookie("username", "FIEK", time() + 60 * 60 * 24 * 7);
                 <div class="titulli-div">
                     <h3 class="titulli"><span>TOP </span> <span style="color: #dd0a37;">FIVE UNIVERSITIES</span></h3> <br>
                 </div>
-                 <br> <br>
+                <br> <br>
                 <div class="col-md-8 col-md-offset-2">
                     <div class="events-wrapper">
                         <!-- Universiteti 1 top--><br> <br>
@@ -479,7 +479,7 @@ setcookie("username", "FIEK", time() + 60 * 60 * 24 * 7);
                             </div>
                         </div>
                         <!-- Mbarimi -->
-                    </div>                    
+                    </div>
                 </div>
             </div>
         </div>

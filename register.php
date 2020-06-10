@@ -83,8 +83,6 @@ include 'regjistrimi.php';
 
             <div class="form-group text-center">
                 <input type="submit" class="btn btn-primary" name="krijo" id="largohu" value="Register">
-
-
             </div>
         </form>
          <center><a href="./index.php"><button class="btn btn-primary">Return Home</button></a></center>

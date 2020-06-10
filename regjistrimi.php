@@ -10,7 +10,7 @@ if(isset($_POST['krijo'])){
  
 	// Validoni emrin e përdoruesit (username).
     if(empty(trim($_POST["username"]))){
-        $username_err = "Please enter your username!";
+     $username_err = "Please enter your username!";
     } else{
 		// Përgatitni një deklaratë (select) të zgjedhur.
         $sql = "SELECT id FROM table_admins WHERE username = ?";
@@ -73,7 +73,7 @@ if(isset($_POST['krijo'])){
         if($stmt = mysqli_prepare($link, $sql)){
 
 			// Bind (vendos/lidh) variablat në deklaratën e përgatitur si parametra.
-            mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
+            mysqli_stmt_bind_param($stmt, "s", $param_username, $param_password);
             
             // Vendosni parametrat.
             $param_username = $username;
@@ -83,7 +83,7 @@ if(isset($_POST['krijo'])){
             
             // Përpjekje për të ekzekutuar deklaratën e përgatitur.		
             if(mysqli_stmt_execute($stmt)){
-				
+                				
                 // Redirektohuni në faqen e kyqjes.
                 header("location: login.php");
             } else{

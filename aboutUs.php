@@ -1,21 +1,24 @@
 <?php
-require("Header.php")
+require("Header.php");
 ?>
 
 <?php
 ob_start();
 $emri = "personi";
 $vlera = "101";
+
 setcookie($emri, $vlera, time() + 60 * 60 * 24);
 if (isset($_POST['personi'])) {
-    $emri = "FIEK";
+    $emri = "FIEK"; 
     $vlera = "101";
 }
 
-if (isset($_COOKIE)) {
+if (isset($_COOKIE["personi"])) {
     echo "Cookie i krijuar:" . $_COOKIE["personi"];
     echo "<br>";
+    
     ShfaqListenCookie();
+
 } else {
     echo "Nuk ekziston ndonje cookie i krijuar ne kete web app.";
 }
@@ -24,7 +27,8 @@ function ShfaqListenCookie()
 {
     echo "Lisa e cookie-ve akitv: <br/>";
     echo "<table border='1'><tr><th>Cookie</th><th>Vlera</th></tr>";
-    foreach ($_COOKIE as $key => $value) {
+  
+    foreach ($_COOKIE as $key => $value) {       
         echo "<tr><td>" . $key . "</n></td><td>" . $value . "</td></tr>";
     }
     echo "</table>";
@@ -40,8 +44,7 @@ require("deletecookies.php");
         <?php
         require_once 'Perdoruesi.php';
         require_once 'Koha.php';
-
-        date_default_timezone_set('america/new_york');
+       
 
         $aMember = new Perdoruesi("FIEK", "Bregun e Diellit", 'http://w3programmers.com/');
         echo $aMember->getUsername() . " gjendet ne " . $aMember->getLocation() . "<br>";
@@ -49,32 +52,29 @@ require("deletecookies.php");
         $aTopic = new Koha("Koha: ", $aMember);
         $aTopic->showHeader();
         $aTopic->save();
-        ?>
-        <?php
-
+       
         // get host name from URL
         preg_match(
             '@^(?:http://)?([^/]+)@i',
             "http://www.php.net/index.html",
             $matches
-        );
+        );       
         $host = $matches[1];
         // get last two segments of host name
-        preg_match('/[^.]+\.[^.]+$/', $host, $matches);
+        preg_match('@[^.]+\.[^.]+$@', $host, $matches);
         echo "Domain name is: {$matches[0]}\n";
-
         ?>
     </div>
 
     <hr id="hr44" data-aos="slide-left">
-    <hr id="hr3" data-aos="slide-left">
+    <hr id="hr3"  data-aos="slide-left">
 
     <?php
     $string = 'The Education Department is in -> USA.';
     $patterns = array();
     $patterns[6] = '/USA/';
     $replacements = array();
-    $replacements[2] = 'Kosova';
+    $replacements[0] = 'Kosova';
     $statement = preg_replace($patterns, $replacements, $string);
     echo "<h4>$statement</h4>";
 
@@ -94,7 +94,7 @@ require("deletecookies.php");
 <hr id="hr3">
 <hr id="hr4">
 <?php
-require("WebWeather.php");
+//require("WebWeather.php");
 ?>
 
 <!-- Rangimet -->
@@ -170,7 +170,7 @@ require("WebWeather.php");
     var partner = document.getElementById('partner');
 
     var i = 0,
-        persona = 11230987;
+    persona = 11230987;
 
     function pjesmarresit() {
         pjesmarres.innerHTML = i++ + '+';

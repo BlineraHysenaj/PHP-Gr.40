@@ -1,24 +1,4 @@
-
-$(document).on('click', '#btn-add', function (e) {
-	var data = $("#user_form").serialize();
-	$.ajax({
-		data: data,
-		type: "post",
-		url: "backend/save.php",
-		success: function (dataResult) {
-			var dataResult = JSON.parse(dataResult);
-			if (dataResult.statusCode == 200) {
-				$('#addEmployeeModal').modal('hide');
-				alert('Data added successfully !');
-				location.reload();
-			}
-			else if (dataResult.statusCode == 201) {
-				alert(dataResult);
-			}
-		}
-	});
-});
-$(document).on('click', '.update', function (e) {
+$(document).on('click', '.update', function (e) {//login
 	var id = $(this).attr("data-id");
 	var name = $(this).attr("data-name");
 	var email = $(this).attr("data-email");
@@ -32,7 +12,8 @@ $(document).on('click', '.update', function (e) {
 });
 
 $(document).on('click', '#update', function (e) {
-	var data = $("#update_form").serialize();
+	var data = $("#update_form").serialize();//login
+	
 	$.ajax({
 		data: data,
 		type: "post",
@@ -61,13 +42,12 @@ $(document).on("click", "#delete", function () {
 		type: "POST",
 		cache: false,
 		data: {
-			type: 3,
 			id: $("#id_d").val()
 		},
 		success: function (dataResult) {
 			$('#deleteEmployeeModal').modal('hide');
-			$("#" + dataResult).remove();
-
+			$("#" + dataResult).reove();
+m
 		}
 	});
 });
@@ -103,23 +83,4 @@ $(document).on("click", "#delete_multiple", function () {
 		}
 	}
 });
-$(document).ready(function () {
-	$('[data-toggle="tooltip"]').tooltip();
-	var checkbox = $('table tbody input[type="checkbox"]');
-	$("#selectAll").click(function () {
-		if (this.checked) {
-			checkbox.each(function () {
-				this.checked = true;
-			});
-		} else {
-			checkbox.each(function () {
-				this.checked = false;
-			});
-		}
-	});
-	checkbox.click(function () {
-		if (!this.checked) {
-			$("#selectAll").prop("checked", false);
-		}
-	});
-});
+
